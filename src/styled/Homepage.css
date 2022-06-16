@@ -1,0 +1,26 @@
+.popular__category{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0,0,0,0);
+ 
+    align-items: center;
+
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.popular__cate__cards img{
+    width:95px;
+    height:174px;
+}
+.container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.popular__cate__cards a:hover{
+   text-decoration: underline;
+}
