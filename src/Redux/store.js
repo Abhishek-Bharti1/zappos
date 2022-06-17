@@ -1,9 +1,8 @@
-import {legacy_createStore,combineReducers,applyMiddleware, compose} from 'redux'
-import thunk from 'redux-thunk'
-import reducer from './reducer'
-const rootReducer = combineReducers({ecommerceData: reducer})
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+import { legacy_createStore } from "redux";
+import reducers from "./reducer/index"
 
-export const store = legacy_createStore(
-    rootReducer,
-    composeEnhancers(applyMiddleware(thunk))) 
+const store = legacy_createStore(reducers,
+    {},
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+
+export  default store
