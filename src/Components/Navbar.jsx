@@ -1,5 +1,12 @@
 import React from "react";
 import '../styled/Navbar.css'
+
+import {Link} from 'react-router-dom'
+
+import Login from "../Pages/Login";
+import Cart from "../Pages/Cart";
+// import { FETCH_ORDERS_REQUEST } from "../Redux/products/actionTypes";
+
 function Navbar() {
   return (
     <>
@@ -42,7 +49,7 @@ function Navbar() {
             <button>SEARCH</button>
           </div>
           <div className="div3">
-            <button> MY Cart</button>
+           <Link to={"/cart"} element = {<Cart/>}><button> MY Cart</button></Link> 
           </div>
         </div>
 
@@ -456,9 +463,9 @@ function Navbar() {
               </div>
             </div>
           </div>
-          <div className="sign">
+       <Link to={"/login"} element={<Login/>} > <div className="sign">
             <h2>Sign In/Register</h2>
-          </div>
+          </div></Link> 
         </div>
 
         {/* dropdownends */}

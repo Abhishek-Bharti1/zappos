@@ -14,15 +14,15 @@ const Homepage = () => {
 
 <div className='popular__cate__cards'>
   <img src='https://m.media-amazon.com/images/I/71U7e7IRHSL._AC_SX255_.jpg' alt=''/>
-  <Link to={`/sneakers`}>Sneakers and Athletic Shoes</Link>
+  <Link to={`/products`}>Sneakers and Athletic Shoes</Link>
 </div>
 <div className='popular__cate__cards'>
   <img src='https://m.media-amazon.com/images/I/71H1zKI3q5L._AC_SX255_.jpg' alt=''/>
-  <a href='#'>Sandals</a>
+  <Link to={`/products`}>Sandals</Link>
 </div>
 <div className='popular__cate__cards'>
   <img src='https://m.media-amazon.com/images/I/71gw6D5NE+L._AC_SX255_.jpg' alt=''/>
-  <a href='#'>Dresses</a>
+  <Link to={`/products`}>Dresses</Link>
 </div>
 <div className='popular__cate__cards'>
   <img src='https://m.media-amazon.com/images/I/71NI4oqYMuL._AC_SX255_.jpg' alt=''/>
